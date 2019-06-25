@@ -13,7 +13,7 @@ function newState() {
 
   localStorage.getItem(stateArray)
 
-  var header = $('h1');
+  var header = $('.start');
   header.text(state);
 
   var statesAndCapitals = {
