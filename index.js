@@ -1,4 +1,4 @@
-var stateArray =['Massachusetts', 'New Jersey', 'Washington', 'Wyoming']
+var stateArray =['Alabama','Alaska','Arizona','Arkansas','California','Colorado','Connecticut','Delaware','Florida','Georgia','Hawaii','Idaho','Illinois','Indiana','Iowa','Kansas','Kentucky','Louisiana','Maine', 'Maryland','Massachusetts','Michigan','Minnesota','Mississippi','Missouri','Montana','Nebraska','Nevada','New Hampshire','New Jersey','New Mexico','New York','North Carolina','North Dakota', 'Ohio','Oklahoma','Oregon','Pennsylvania','Rhode Island','South Carolina','South Dakota','Tennessee','Texas','Utah','Vermont','Virginia','Washington','West Virginia','Wisconsin','Wyoming'];
 localStorage.setItem(stateArray, JSON.stringify(stateArray))
 window.streak = 0;
 
@@ -16,14 +16,7 @@ function newState() {
   var header = $('.start');
   header.text(state);
 
-  var statesAndCapitals = {
-
-    'Massachusetts' : 'Boston',
-    'New Jersey' : 'Trenton',
-    'Washington' : 'Olympia',
-    'Wyoming' : 'Cheyenne'
-
-  }
+  var statesAndCapitals = {'Alabama' : 'Montgomery', 'Alaska':'Juneau', 'Arizona': 'Phoenix', 'Arkansas': 'Little Rock', 'California': 'Sacramento', 'Colorado': 'Denver', 'Connecticut' : 'Hartford','Delaware': 'Dover','Florida': 'Tallahassee','Georgia' : 'Atlanta','Hawaii': 'Honolulu','Idaho' : 'Boise','Illinois': 'Springfield','Indiana': 'Indianapolis','Iowa': 'Des Moines','Kansas': 'Topeka','Kentucky': 'Frankfort','Louisiana': 'Baton Rouge','Maine': 'Augusta', 'Maryland': 'Annapolis','Massachusetts': 'Boston','Michigan': 'Lansing','Minnesota': 'Saint Paul','Mississippi': 'Jackson','Missouri': 'Jefferson City','Montana': 'Helena','Nebraska': 'Lincoln','Nevada': 'Carson City','New Hampshire': 'Concord','New Jersey': 'Trenton','New Mexico': 'Santa Fe','New York': 'Albany','North Carolina': 'Raleigh','North Dakota': 'Bismarck', 'Ohio': 'Columbus','Oklahoma': 'Oklahoma City','Oregon': 'Salem','Pennsylvania': 'Harrisburg','Rhode Island': 'Providence','South Carolina': 'Columbia','South Dakota': 'Pierre','Tennessee': 'Nashville','Texas': 'Austin','Utah': 'Salt Lake City','Vermont': 'Montpelier','Virginia': 'Richmond','Washington': 'Olympia','West Virginia': 'Charleston','Wisconsin': 'Madison','Wyoming': 'Cheyenne'}
   window.capital = statesAndCapitals[state]
   //console.log(capital)
 }
